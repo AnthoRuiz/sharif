@@ -91,7 +91,7 @@ switch (ENVIRONMENT)
  * Include the path if the folder is not in the same directory
  * as this file.
  */
-	$system_path = '/home/jakaboy/secreta/system';
+	$system_path = '/opt/lampp/htdocs/sharif/system';
 
 /*
  *---------------------------------------------------------------
@@ -106,7 +106,7 @@ switch (ENVIRONMENT)
  *
  * NO TRAILING SLASH!
  */
-	$application_folder = '/home/jakaboy/secreta/application';
+	$application_folder = '/opt/lampp/htdocs/sharif/application';
 
 /*
  *---------------------------------------------------------------
