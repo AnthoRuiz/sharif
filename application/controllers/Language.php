@@ -25,13 +25,11 @@ class Language extends CI_Controller
 
 		if($language == "ES"){
 			$this->config->set_item('language','spanish');
-			$this->lang->load('front', 'spanish');
 		}
 		elseif($language == "EN"){
 			$this->config->set_item('language','english');
-			$this->lang->load('front', 'english');
 		}
-
+		$this->lang->load('front');
 		$this->twig->display('pages/dashboard.twig', $data);
 	}
 

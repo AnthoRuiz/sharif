@@ -20,25 +20,6 @@ class Dashboard extends CI_Controller
 
 		$this->load->model('notifications_model')->helper('text');
 		
-	
-
-
-		/*$this->config->set_item('language','english');
-		$this->lang->load('front');
-
-
-		$sessionArray = $this->session->all_userdata();
-		echo '<pre>';
-		print_r($sessionArray);
-		echo $this->config->item('language');
-		$this->session->unset_userdata('idiom');
-		$this->session->set_userdata('idiom', $this->config->item('language'));
-
-		echo '</pre>';
-		die();*/
-
-
-		//"<pre>".print_r($this->session->alluserdata(), true)."</pre>";
 	}
 
 
@@ -47,12 +28,6 @@ class Dashboard extends CI_Controller
 
 	public function index()
 	{
-		/*echo $this->config->item('language');
-		echo "<br/>";
-		echo $this->lang->line('Dashboard');
-		echo "<br/>";
-		die();*/
-		//die($this->config->item('language'));
 		$data = array(
 			'all_assignments'=>$this->assignment_model->all_assignments(),
 			'week_start'=>$this->settings_model->get_setting('week_start'),
