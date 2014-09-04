@@ -193,6 +193,18 @@ class Twig
 			)
 		);
 
+		//funcion para imprimir el idioma by Jakaboy 
+		$this->twig->addFunction(
+			new Twig_SimpleFunction(
+				'idioma', 
+				function (){
+				
+				return($this->_ci->config->item('language'));
+				
+				}
+			)
+		);
+
 		$this->_ci->load->model('user');
 		$this->twig->addGlobal('user', $this->_ci->user);
 

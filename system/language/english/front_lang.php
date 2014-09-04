@@ -54,6 +54,7 @@ $lang['Registered successfully'] = 'Registered successfully';
 $lang['New Password'] = 'New Password';
 $lang['Again'] = 'Again';
 $lang['Login with your new password'] = 'Login with your new password';
+$lang['Tools'] = 'Tools';
 
 
 ?>

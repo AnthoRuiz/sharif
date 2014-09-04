@@ -17,7 +17,28 @@ class Dashboard extends CI_Controller
 			redirect('install');
 		if ( ! $this->session->userdata('logged_in')) // if not logged in
 			redirect('login');
+
 		$this->load->model('notifications_model')->helper('text');
+		
+	
+
+
+		/*$this->config->set_item('language','english');
+		$this->lang->load('front');
+
+
+		$sessionArray = $this->session->all_userdata();
+		echo '<pre>';
+		print_r($sessionArray);
+		echo $this->config->item('language');
+		$this->session->unset_userdata('idiom');
+		$this->session->set_userdata('idiom', $this->config->item('language'));
+
+		echo '</pre>';
+		die();*/
+
+
+		//"<pre>".print_r($this->session->alluserdata(), true)."</pre>";
 	}
 
 

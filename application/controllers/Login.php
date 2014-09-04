@@ -56,7 +56,8 @@ class Login extends CI_Controller
 				// setting the session and redirecting to dashboard:
 				$login_data = array(
 					'username'  => $username,
-					'logged_in' => TRUE
+					'logged_in' => TRUE,
+					'idiom' => $this->config->item('language')
 				);
 				$this->session->set_userdata($login_data);
 				$this->user_model->update_login_time($username);
